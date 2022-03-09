@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.PrescriptionListActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNoPrescriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No prescriptions yet"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precriptions"
+        android:background="#B8B1B1"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:gravity="center"
+        android:padding="8dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_prescription_list"
+        android:layout_below="@+id/tv_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>

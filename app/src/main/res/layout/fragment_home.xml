@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <!-- image only becomes circular after we run the app in the phone-->
+<RelativeLayout
+    android:id="@+id/relative_layout_profile"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@drawable/gradient_background"
+    android:gravity="center">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#03A9F4"
+        android:src="@drawable/user4"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+<!--
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+-->
+</RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/relative_layout_profile"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            >
+            <LinearLayout
+                android:id="@+id/linear_layout_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="32dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/tvUserProfileFullName"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="12dp"
+                    android:padding="12dp"
+                    android:gravity="start"
+                    android:text="full name"
+                    android:textSize="18sp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+
+                     />
+
+
+                <TextView
+                    android:id="@+id/tvUserProfileEmail"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:padding="12dp"
+                    android:gravity="start"
+                    android:text="Email"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvUserProfileAddress"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawablePadding="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:padding="12dp"
+                    android:gravity="start"
+                    android:text="Address"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUserProfileAge"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_time"
+                    android:drawablePadding="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:padding="12dp"
+                    android:gravity="start"
+                    android:text="Age"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUserProfilePhoneNo"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:padding="12dp"
+                    android:gravity="start"
+                    android:text="Phone no"
+                    android:textSize="18sp"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="120dp"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Log out"
+        />
+
+
+</RelativeLayout>

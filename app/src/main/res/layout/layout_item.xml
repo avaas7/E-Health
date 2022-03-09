@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/li_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Department"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#3F51B5"/>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/cv_appointment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020/03/12"
+                android:textSize="20sp"
+                android:textColor="@color/teal_200"
+
+                android:padding="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_name"
+                android:text="name"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="#3F51B5"
+                />
+
+                <TextView
+                    android:id="@+id/cv_pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PENDING"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:textColor="#F44336"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

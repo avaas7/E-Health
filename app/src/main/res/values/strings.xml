@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppointmentApplication</string>
+
+    <string-array name="department_array">
+        <item>Cardiology</item>
+        <item>InfectiousDisease</item>
+        <item>Hematology</item>
+        <item>Nephrology</item>
+        <item>Gynaecology</item>
+        <item>Psychiatry</item>
+    </string-array>
+
+    <string-array name="array_role">
+        <item>Patient</item>
+        <item>Doctor</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
